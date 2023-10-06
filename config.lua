@@ -10,17 +10,15 @@ lvim.plugins = {
   {"jose-elias-alvarez/typescript.nvim"},
   {"lunarvim/lunar.nvim"},
   {
-    'nvim-telescope/telescope-frecency.nvim',
-    dependencies = { 'nvim-telescope/telescope.nvim', 'kkharji/sqlite.lua' },
+    "nvim-telescope/telescope-frecency.nvim",
+    dependencies = {"nvim-telescope/telescope.nvim", "kkharji/sqlite.lua"},
   },
   {
     "phaazon/hop.nvim",
-    event = "BufRead",
+    branch = 'v2',
     config = function()
-      require("hop").setup()
-      vim.api.nvim_set_keymap("n", "s", ":HopChar2<cr>", { silent = true })
-      vim.api.nvim_set_keymap("n", "S", ":HopWord<cr>", { silent = true })
-    end,
+      require('hop').setup()
+    end
   },
   {"ThePrimeagen/harpoon"},
   {"tpope/vim-repeat"},
@@ -31,13 +29,6 @@ lvim.plugins = {
     config = function()
       require("nvim-ts-autotag").setup()
     end,
-  },
-  {
-    'phaazon/hop.nvim',
-    branch = 'v2',
-    config = function()
-      require('hop').setup()
-    end
   },
 }
 
