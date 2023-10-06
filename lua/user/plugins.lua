@@ -5,6 +5,7 @@ lvim.plugins = {
     "folke/trouble.nvim",
     cmd = "TroubleToggle",
   },
+  {"f-person/git-blame.nvim"},
   {
     "folke/todo-comments.nvim",
     event = "BufRead",
