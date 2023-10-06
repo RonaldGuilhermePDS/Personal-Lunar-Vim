@@ -2,7 +2,8 @@
 
 -- Plugins
 lvim.plugins = {
-  {"lunarvim/colorscheme"},
+  {"lunarvim/colorschemes"},
+  {"jose-elias-alvarez/typescript.nvim"},
   {"wakatime/vim-wakatime"}
 }
 
