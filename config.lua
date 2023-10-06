@@ -7,6 +7,13 @@ lvim.plugins = {
     "folke/trouble.nvim",
     cmd = "TroubleToggle",
   },
+  {
+    "folke/todo-comments.nvim",
+    event = "BufRead",
+    config = function()
+      require("todo-comments").setup()
+    end
+  },
   {"jose-elias-alvarez/typescript.nvim"},
   {"lunarvim/lunar.nvim"},
   {
