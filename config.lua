@@ -18,7 +18,8 @@ lvim.plugins = {
       vim.api.nvim_set_keymap("n", "S", ":HopWord<cr>", { silent = true })
     end,
   },
-  { "tpope/vim-repeat" },
+  {"ThePrimeagen/harpoon"},
+  {"tpope/vim-repeat"},
   {"tpope/vim-surround"},
   {"wakatime/vim-wakatime"},
   {
