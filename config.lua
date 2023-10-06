@@ -2,6 +2,7 @@
 
 -- Plugins
 lvim.plugins = {
+  {"christoomey/vim-tmux-navigator"},
   {
     "folke/trouble.nvim",
     cmd = "TroubleToggle",
