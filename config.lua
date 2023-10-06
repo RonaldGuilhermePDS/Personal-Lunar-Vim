@@ -21,6 +21,12 @@ lvim.plugins = {
   {"tpope/vim-surround"},
   {"wakatime/vim-wakatime"},
   {
+    "windwp/nvim-ts-autotag",
+    config = function()
+      require("nvim-ts-autotag").setup()
+    end,
+  },
+  {
     "phaazon/hop.nvim",
     event = "BufRead",
     config = function()
