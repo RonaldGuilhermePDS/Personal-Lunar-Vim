@@ -13,6 +13,7 @@ lvim.plugins = {
       require("todo-comments").setup()
     end
   },
+  {"gpanders/editorconfig.nvim"},
   {"jose-elias-alvarez/typescript.nvim"},
   {"lunarvim/lunar.nvim"},
   {
