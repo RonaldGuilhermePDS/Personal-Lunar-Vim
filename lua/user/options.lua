@@ -2,6 +2,11 @@
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = true
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.project.detection_methods = { "lsp" }
+lvim.builtin.project.patterns = {
+  ".git",
+  "package.json",
+  "mix.exs"
+}
 lvim.builtin.terminal.active = true
 lvim.builtin.treesitter.ensure_installed = {
   "bash",
