@@ -1,10 +1,11 @@
+-- Plugins
 lvim.plugins = {
-  { "christoomey/vim-tmux-navigator" },
+  {"christoomey/vim-tmux-navigator"},
   {
     "folke/trouble.nvim",
     cmd = "TroubleToggle",
   },
-  { "f-person/git-blame.nvim" },
+  {"f-person/git-blame.nvim"},
   {
     "folke/todo-comments.nvim",
     event = "BufRead",
@@ -12,9 +13,9 @@ lvim.plugins = {
       require("todo-comments").setup()
     end
   },
-  { "gpanders/editorconfig.nvim" },
-  { "jose-elias-alvarez/typescript.nvim" },
-  { "lunarvim/lunar.nvim" },
+  {"gpanders/editorconfig.nvim"},
+  {"jose-elias-alvarez/typescript.nvim"},
+  {"lunarvim/lunar.nvim"},
   {
     "norcalli/nvim-colorizer.lua",
     config = function()
@@ -23,7 +24,7 @@ lvim.plugins = {
   },
   {
     "nvim-telescope/telescope-frecency.nvim",
-    dependencies = { "nvim-telescope/telescope.nvim", "kkharji/sqlite.lua" },
+    dependencies = {"nvim-telescope/telescope.nvim", "kkharji/sqlite.lua"},
   },
   {
     "phaazon/hop.nvim",
@@ -32,10 +33,10 @@ lvim.plugins = {
       require('hop').setup()
     end
   },
-  { "ThePrimeagen/harpoon" },
-  { "tpope/vim-repeat" },
-  { "tpope/vim-surround" },
-  { "wakatime/vim-wakatime" },
+  {"ThePrimeagen/harpoon"},
+  {"tpope/vim-repeat"},
+  {"tpope/vim-surround"},
+  {"wakatime/vim-wakatime"},
   {
     "windwp/nvim-ts-autotag",
     config = function()
@@ -47,3 +48,4 @@ lvim.plugins = {
 lvim.builtin.telescope.on_config_done = function(telescope)
   pcall(telescope.load_extension, "frecency")
 end
+
