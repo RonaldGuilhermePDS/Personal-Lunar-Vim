@@ -29,3 +29,4 @@ lvim.format_on_save = true
 lvim.log.level = "warn"
 
 vim.cmd("set history=0")
+vim.opt.shell = "/bin/fish"
