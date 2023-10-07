@@ -1,5 +1,6 @@
 -- General
 lvim.builtin.terminal.active = true
+lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.treesitter.ensure_installed = {
   "bash",
   "json",
