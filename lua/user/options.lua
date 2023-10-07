@@ -1,4 +1,5 @@
 -- General
+lvim.builtin.terminal.active = true
 lvim.builtin.treesitter.ensure_installed = {
   "bash",
   "json",
