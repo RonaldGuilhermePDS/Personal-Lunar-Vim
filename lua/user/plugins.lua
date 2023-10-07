@@ -17,6 +17,12 @@ lvim.plugins = {
   {"jose-elias-alvarez/typescript.nvim"},
   {"lunarvim/lunar.nvim"},
   {
+    "norcalli/nvim-colorizer.lua",
+    config = function()
+      require("colorizer").setup()
+    end,
+  },
+  {
     "nvim-telescope/telescope-frecency.nvim",
     dependencies = {"nvim-telescope/telescope.nvim", "kkharji/sqlite.lua"},
   },
