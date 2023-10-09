@@ -1,7 +1,7 @@
 local linters = require "lvim.lsp.null-ls.linters"
 linters.setup({
   {
-    command = "eslint_d",
+    command = "eslint",
     filetypes = {
       "javascript",
       "javascriptreact",
@@ -14,7 +14,7 @@ linters.setup({
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup({
   {
-    command = "prettierd",
+    command = "prettier",
     filetypes = {
       "markdown.mdx",
       "markdown",
