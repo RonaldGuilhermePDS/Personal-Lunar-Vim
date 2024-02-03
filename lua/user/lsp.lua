@@ -1,33 +1,14 @@
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup({
   {
-    command = "prettier",
-    filetypes = {
-      "markdown.mdx",
-      "markdown",
+    command = "biome",
+    {
+      "javascript",
+      "javascriptreact",
       "json",
-      "yaml",
-      "html",
-      "css",
-      "scss",
-      "javascript",
-      "javascriptreact",
+      "jsonc",
       "typescript",
-      "typescriptreact",
-      "graphql",
-      "handlebars"
-    }
-  },
-})
-
-local linters = require "lvim.lsp.null-ls.linters"
-linters.setup({
-  {
-    command = "eslint",
-    filetypes = {
-      "javascript",
-      "javascriptreact",
-      "typescript",
+      "typescript.tsx",
       "typescriptreact"
     }
   },
